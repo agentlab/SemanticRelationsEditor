@@ -1,0 +1,1 @@
+﻿This folder contains Eclipse feature groups for deployment

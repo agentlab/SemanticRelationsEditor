@@ -1,5 +1,5 @@
 package ru.agentlab.semanticrelations.editor.app.ui;
-
+//testing my forking abilities
 import javax.annotation.PostConstruct;
 
 import org.eclipse.gef.common.adapt.AdapterKey;

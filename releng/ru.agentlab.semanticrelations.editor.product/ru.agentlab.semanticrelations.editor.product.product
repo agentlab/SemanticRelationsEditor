@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="ru.agentlab.semanticrelations.editor.product" uid="ru.agentlab.semanticrelations.editor.product" id="ru.agentlab.semanticrelations.editor.app.product" application="org.eclipse.fx.ui.workbench.fx.application" version="1.0.0" useFeatures="false" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-nosplash
+      </programArgs>
+      <vmArgs>-Dorg.osgi.framework.bundle.parent=ext
+      </vmArgs>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="ch.qos.logback.classic"/>
+      <plugin id="ch.qos.logback.core"/>
+      <plugin id="ch.qos.logback.slf4j" fragment="true"/>
+      <plugin id="com.google.guava"/>
+      <plugin id="com.google.inject"/>
+      <plugin id="com.google.inject.multibindings" fragment="true"/>
+      <plugin id="com.googlecode.concurrentlinkedhashmap.lru"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="javax.annotation.jre"/>
+      <plugin id="javax.inject"/>
+      <plugin id="javax.xml.jre"/>
+      <plugin id="net.sf.extjwnl"/>
+      <plugin id="net.sf.extjwnl.component"/>
+      <plugin id="net.sf.extjwnl.data.wn31"/>
+      <plugin id="net.sf.extjwnl.service"/>
+      <plugin id="net.sf.extjwnl.utilities"/>
+      <plugin id="org.antlr.runtime"/>
+      <plugin id="org.apache.commons.jxpath"/>
+      <plugin id="org.apache.commons.lang"/>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.felix.gogo.command"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.felix.gogo.shell"/>
+      <plugin id="org.apache.felix.scr"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.e4.core.commands"/>
+      <plugin id="org.eclipse.e4.core.contexts"/>
+      <plugin id="org.eclipse.e4.core.di"/>
+      <plugin id="org.eclipse.e4.core.di.annotations"/>
+      <plugin id="org.eclipse.e4.core.di.extensions"/>
+      <plugin id="org.eclipse.e4.core.di.extensions.supplier"/>
+      <plugin id="org.eclipse.e4.core.services"/>
+      <plugin id="org.eclipse.e4.emf.xpath"/>
+      <plugin id="org.eclipse.e4.ui.di"/>
+      <plugin id="org.eclipse.e4.ui.model.workbench"/>
+      <plugin id="org.eclipse.e4.ui.services"/>
+      <plugin id="org.eclipse.e4.ui.workbench"/>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.ecore"/>
+      <plugin id="org.eclipse.emf.ecore.change"/>
+      <plugin id="org.eclipse.emf.ecore.xmi"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.concurrent"/>
+      <plugin id="org.eclipse.equinox.console"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.event"/>
+      <plugin id="org.eclipse.equinox.launcher"/>
+      <plugin id="org.eclipse.equinox.launcher.win32.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.simpleconfigurator"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.fx.core"/>
+      <plugin id="org.eclipse.fx.core.databinding"/>
+      <plugin id="org.eclipse.fx.core.di"/>
+      <plugin id="org.eclipse.fx.core.di.context"/>
+      <plugin id="org.eclipse.fx.core.fxml"/>
+      <plugin id="org.eclipse.fx.core.slf4j"/>
+      <plugin id="org.eclipse.fx.osgi.util"/>
+      <plugin id="org.eclipse.fx.ui.animation"/>
+      <plugin id="org.eclipse.fx.ui.controls"/>
+      <plugin id="org.eclipse.fx.ui.databinding"/>
+      <plugin id="org.eclipse.fx.ui.di"/>
+      <plugin id="org.eclipse.fx.ui.di.interopt"/>
+      <plugin id="org.eclipse.fx.ui.dialogs"/>
+      <plugin id="org.eclipse.fx.ui.keybindings"/>
+      <plugin id="org.eclipse.fx.ui.keybindings.e4"/>
+      <plugin id="org.eclipse.fx.ui.keybindings.generic"/>
+      <plugin id="org.eclipse.fx.ui.panes"/>
+      <plugin id="org.eclipse.fx.ui.services"/>
+      <plugin id="org.eclipse.fx.ui.theme"/>
+      <plugin id="org.eclipse.fx.ui.workbench.base"/>
+      <plugin id="org.eclipse.fx.ui.workbench.fx"/>
+      <plugin id="org.eclipse.fx.ui.workbench.renderers.base"/>
+      <plugin id="org.eclipse.fx.ui.workbench.renderers.fx"/>
+      <plugin id="org.eclipse.fx.ui.workbench.services"/>
+      <plugin id="org.eclipse.gef.common"/>
+      <plugin id="org.eclipse.gef.dot"/>
+      <plugin id="org.eclipse.gef.fx"/>
+      <plugin id="org.eclipse.gef.geometry"/>
+      <plugin id="org.eclipse.gef.geometry.convert.fx"/>
+      <plugin id="org.eclipse.gef.graph"/>
+      <plugin id="org.eclipse.gef.layout"/>
+      <plugin id="org.eclipse.gef.mvc.fx"/>
+      <plugin id="org.eclipse.gef.zest.fx"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.osgi.util"/>
+      <plugin id="org.eclipse.xtend.lib"/>
+      <plugin id="org.eclipse.xtend.lib.macro"/>
+      <plugin id="org.eclipse.xtext"/>
+      <plugin id="org.eclipse.xtext.util"/>
+      <plugin id="org.eclipse.xtext.xbase.lib"/>
+      <plugin id="org.hamcrest.core"/>
+      <plugin id="org.junit"/>
+      <plugin id="org.slf4j.api"/>
+      <plugin id="org.slf4j.apis.jcl"/>
+      <plugin id="org.slf4j.apis.log4j"/>
+      <plugin id="org.slf4j.bridge.jul"/>
+      <plugin id="ru.agentlab.semanticrelations.editor.app"/>
+   </plugins>
+
+   <features>
+      <feature id="ru.agentlab.semanticrelations.editor.feature"/>
+      <feature id="org.eclipse.fx.runtime.e4fx.feature"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="-1" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

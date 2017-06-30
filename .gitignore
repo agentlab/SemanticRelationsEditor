@@ -1,11 +1,18 @@
-# Compiled class file
+# Dirs With Binaries #
+bin
+lib
+target
+xtend-gen
+src-gen
+classes
+temp
+
+# Binary Files #
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
+*.dll
+*.lib
+*.exe
+*.obj
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -15,8 +22,17 @@
 *.war
 *.ear
 *.zip
-*.tar.gz
 *.rar
+*.7z
+*.tar
+
+# Temporary Files #
+*.bak
+*.target
+
+# Data Files #
+*.dat
+*.idn
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*

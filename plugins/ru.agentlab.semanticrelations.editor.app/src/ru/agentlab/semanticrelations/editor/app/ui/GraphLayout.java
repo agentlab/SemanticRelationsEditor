@@ -32,13 +32,7 @@ import org.eclipse.gef.layout.ILayoutAlgorithm;
 import org.eclipse.gef.layout.LayoutContext;
 import org.eclipse.gef.layout.LayoutProperties;
 
-/**
- * An example to demonstrate how the native dot executable can be used for
- * auto-layout in the context of Zest. It requires that dotExecutablePath points
- * to a valid native dot executable.
- *
- * @author anyssen
- */
+@SuppressWarnings("restriction")
 public class GraphLayout extends Helper {
 
 	public class DotNativeLayout implements ILayoutAlgorithm {
@@ -110,31 +104,4 @@ public class GraphLayout extends Helper {
 			}
 		}
 	}
-
-/*
-	public Graph createGraph() {
-		String paper = "Paper";
-		String rock = "Rock";
-		String scissors = "Scissors";
-		String spock = "Spock";
-		String lizard = "Lizard";
-		return new Graph.Builder()
-				.attr(ZestProperties.LAYOUT_ALGORITHM__G,new HorizontalShiftAlgorithm())
-				.node(paper).attr(LABEL, paper) //
-				.node(rock).attr(LABEL, rock) //
-				.node(scissors).attr(LABEL, scissors) //
-				.node(spock).attr(LABEL, spock) //
-				.node(lizard).attr(LABEL, lizard) //
-				.edge(paper, spock) //
-				.edge(paper, rock) //
-				.edge(rock, scissors) //
-				.edge(rock, lizard) //
-				.edge(scissors, paper) //
-				.edge(scissors, lizard) //
-				.edge(spock, scissors) //
-				.edge(spock, rock) //
-				.edge(lizard, spock) //
-				.edge(lizard, paper) //
-				.build();
-	}*/
 }

@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
 
-public class DictionaryPart {
+public class InputPart {
 
     @PostConstruct
     void initUI(BorderPane pane) {
@@ -14,7 +14,6 @@ public class DictionaryPart {
 			Button EnterButton = new Button();
 			TextArea textbox = new TextArea();
 			EnterButton.setText("Send Data");
-
 
 			EnterButton.setOnAction((event) -> {
 				String tmp = textbox.getText();
@@ -24,7 +23,7 @@ public class DictionaryPart {
 			textbox.setMaxWidth(500);
 			textbox.setMaxHeight(100);
 			textbox.setWrapText(true);
-			textbox.setText("testing, this is my testing application");
+			textbox.setText("Type your sentence here");
 			pane.setLeft(EnterButton);
 			pane.setCenter(textbox);
 		}

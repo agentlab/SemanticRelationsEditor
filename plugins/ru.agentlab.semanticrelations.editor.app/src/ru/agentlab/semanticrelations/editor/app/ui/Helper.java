@@ -1,53 +1,50 @@
 
 package ru.agentlab.semanticrelations.editor.app.ui;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
 
 import org.eclipse.gef.graph.Graph;
 import org.eclipse.gef.graph.Graph.Builder;
-import org.eclipse.gef.graph.Node;
+import org.eclipse.gef.layout.algorithms.HorizontalShiftAlgorithm;
 import org.eclipse.gef.mvc.fx.domain.IDomain;
 import org.eclipse.gef.mvc.fx.viewer.IViewer;
 import org.eclipse.gef.zest.fx.ZestProperties;
 
 public class Helper {
 
-	private static int id = 0;
 	protected static final String ID = ZestProperties.CSS_ID__NE;
 	protected static final String LABEL = ZestProperties.LABEL__NE;
 	protected static final String CSS_CLASS = ZestProperties.CSS_CLASS__NE;
 	protected static final String LAYOUT_IRRELEVANT = ZestProperties.LAYOUT_IRRELEVANT__NE;
-	protected IDomain domain;
-	protected IViewer viewer;
-	protected Graph graph;
-	static String[] tokens;
+	protected static IDomain domain;
+	protected static IViewer viewer;
+	protected static Graph graph;
+	static String[] tokens; //Array of words of a sentence
 
 	static Graph createGraph() {
-		Builder b = new Graph.Builder();
+		Builder builder = new Graph.Builder().attr(ZestProperties.LAYOUT_ALGORITHM__G, new HorizontalShiftAlgorithm());
+		for (int i = 0; i < tokens.length; i++) {
+			builder
+			.node(i)
+			.attr(LABEL, tokens[i])
+			.edge(i - 1, i).attr(LABEL, "edge" + i);//add edges
 
-
-
-		Graph g = b.build();
+		}
+		Graph g = builder.build();
+		//System.out.println(g);
 		return g;
 	}
 
-
-	private void addNodes(Graph.Builder graphBuilder, int count,int startNumber) {
-	List<Node> nodes = new ArrayList<>();
-
-	for (int i = 0; i < count; i++) {
-//		nodes.add(new Node.Builder().attr(label, (startNumber + i)).buildNode());
+	static Graph createGraphnull() {
+		return graph;
 	}
-	graphBuilder.nodes(nodes);
-}
-	public static void handleButton(String textbox)  {
-		System.out.println(textbox);
-        String str = textbox;
-        String delims = "[ .,?!]+";
-			tokens = str.split(delims);
-			createGraph();
+
+	public static void handleButton(String textbox) {
+		String str = textbox;
+		String delims = "[ .,?!]+";
+		tokens = str.split(delims);
+		graph = createGraph();
+		viewer.getContents().setAll(Collections.singletonList(graph));
 	}
 
 }
-

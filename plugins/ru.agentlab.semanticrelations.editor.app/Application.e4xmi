@@ -3,10 +3,10 @@
   <children xsi:type="basic:Window" xmi:id="_lb1B8DO-EeaSbOhy7r61jQ" elementId="ru.agentlab.semanticrelations.editor.app.window.0">
     <children xsi:type="basic:PartSashContainer" xmi:id="_T7Cz0LGWEea0_qL29zbUpA" elementId="ru.agentlab.semanticrelations.editor.app.partsashcontainer.0" selectedElement="_ZMZYsLGWEea0_qL29zbUpA">
       <children xsi:type="basic:PartStack" xmi:id="_ZMZYsLGWEea0_qL29zbUpA" elementId="ru.agentlab.semanticrelations.editor.app.partstack.1">
-        <children xsi:type="basic:Part" xmi:id="_G5g10DTUEeaSbOhy7r61jQ" elementId="ru.agentlab.semanticrelations.editor.app.part.wordnet.editor.inputpart" contributionURI="bundleclass://ru.agentlab.semanticrelations.editor.app/ru.agentlab.semanticrelations.editor.app.ui.DictionaryPart" label="InputPart"/>
+        <children xsi:type="basic:Part" xmi:id="_G5g10DTUEeaSbOhy7r61jQ" elementId="ru.agentlab.semanticrelations.editor.app.part.wordnet.editor.inputpart" contributionURI="bundleclass://ru.agentlab.semanticrelations.editor.app/ru.agentlab.semanticrelations.editor.app.ui.InputPart" label="InputPart"/>
       </children>
       <children xsi:type="basic:PartStack" xmi:id="_FdPsIDTUEeaSbOhy7r61jQ" elementId="ru.agentlab.semanticrelations.editor.app.partstack.0">
-        <children xsi:type="basic:Part" xmi:id="_h_qQALGUEea0_qL29zbUpA" elementId="ru.agentlab.semanticrelations.editor.app.part.gef5view" contributionURI="bundleclass://ru.agentlab.semanticrelations.editor.app/ru.agentlab.semanticrelations.editor.app.ui.WordPart" label="Gef5 view"/>
+        <children xsi:type="basic:Part" xmi:id="_h_qQALGUEea0_qL29zbUpA" elementId="ru.agentlab.semanticrelations.editor.app.part.gef5view" contributionURI="bundleclass://ru.agentlab.semanticrelations.editor.app/ru.agentlab.semanticrelations.editor.app.ui.GefPart" label="Gef5 view"/>
       </children>
     </children>
     <mainMenu xmi:id="_mn7BoDO-EeaSbOhy7r61jQ" elementId="ru.agentlab.semanticrelations.editor.app.menu.0"/>
